@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "react-nasa-apod",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "presurge": "npm run build",
+    "surge": "npx surge --domain $(node -p \"require('./package.json').name\").surge.sh --project ./build"
   },
   "eslintConfig": {
     "extends": "react-app"
